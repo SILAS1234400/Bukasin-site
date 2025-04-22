@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Bukasin</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to Bukasin Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Services</h3>
+    <ul>
+      <li><a href="#">Buy Airtime</a></li>
+      <li><a href="#">Buy Data</a></li>
+      <li><a href="#">Cable TV Subscription</a></li>
+      <li><a href="#">NIMC Verification</a></li>
+    </ul>
+
+    <h3>Fund Wallet</h3>
+    <p>To fund your wallet, transfer to any of the accounts below:</p>
+    <div class="account">
+      <strong>Acct 1</strong><br>
+      Account No: <b>9064380440</b><br>
+      Bank: <b>Moniepoint</b><br>
+      Name: <b>Silas Chukwuebuka Godswill</b>
+    </div>
+    <br>
+    <div class="account">
+      <strong>Acct 2</strong><br>
+      Account No: <b>9034433073</b><br>
+      Bank: <b>Opay</b><br>
+      Name: <b>Silas Chukwuebuka Godswill</b>
+    </div>
+    <p style="margin-top: 15px;">
+      After payment, please <a href="https://wa.me/2349064380440" target="_blank" style="color: #fff; text-decoration: underline;">chat with admin on WhatsApp</a> to confirm and fund your wallet.
+    </p>
+
+    <h3>Customer Support</h3>
+    <p>
+      Need help? <a href="https://wa.me/2349064380440" target="_blank" style="color: #fff; text-decoration: underline;">Chat with Customer Support on WhatsApp</a>
+    </p>
+  </div>
+
+  <script>
+    if (!localStorage.getItem("loggedIn")) {
+      window.location.href = "index.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

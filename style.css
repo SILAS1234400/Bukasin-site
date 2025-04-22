@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, skyblue, royalblue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+  }
+  
+  input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  button {
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .account {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
